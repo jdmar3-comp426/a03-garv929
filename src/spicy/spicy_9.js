@@ -30,7 +30,7 @@ export const repeat = (fn, n, ...params) => {
  */
 export const repeatDemo = () => {
     const arr = ["Hello, world!"];
-    repeat(console.log(), 10, arr);
+    repeat(console.log, 10, arr);
 
 };
 
