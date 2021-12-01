@@ -25,10 +25,11 @@ export function identifyVariable(variable) {
 
  */
 export function identifyArray(array) {
-   var dict = {};
+   const arr = [];
    for(let i = 0; i < array.length; i++){
-      identifyVariable(array[i]);
+      arr[i] = identifyVariable(array[i]);
    }
+   return arr;
 
 }
 
