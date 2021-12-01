@@ -71,6 +71,7 @@ export function removeKey(object, key) {
  */
 export function removeKeyNonDestructive(object, key) {
    delete object[key];
+   return object;
 
 
 }
