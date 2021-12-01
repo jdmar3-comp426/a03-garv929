@@ -60,6 +60,15 @@ export function maxAndMin(numbers) {
  *
  */
 export function countArray(array) {
-    
+    var dict = {};
+    for(let i = 0; i < array.length; i++){
+        if(array[i] in dict){
+            dict[array[i]]++;
+        }
+        else{
+            dict[array[i]] = 1;
+        }
+    }
+    return dict;
 
 }
